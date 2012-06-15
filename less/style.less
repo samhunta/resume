@@ -110,21 +110,30 @@ html, #layout-resume {
 	li { width:33.332%; float:left; }
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
 	.masthead .phone-number {
 		display:block;
 		float:none;
-		margin:0;
+		font-size: 15px;
+		margin:0 0 5px;
+		clear:left;
 	}
-	
+
 	.domains-list li {
 		width: 50%;
 	} 
+
+	.masthead h1 {
+		font-size: 21px;
+		line-height: 24px;
+		margin:0;
+		padding:0;
+	}
 }
 
 @media print {
 	html, #layout-resume {
-		background: @white !important;
+		background: @white;
 		line-height: 13px;
 		font-size: 11px;
 	}
@@ -132,12 +141,12 @@ html, #layout-resume {
 	.masthead h1 {
 		font-size: 21px;
 		line-height: 24px;
-		margin:0!important;
-		padding:0!important;
+		margin:0;
+		padding:0;
 	}
 
 	.page-header {
-		margin:0!important;
+		margin:0;
 	}
 
 	.masthead h1 small {
@@ -148,8 +157,8 @@ html, #layout-resume {
 	.masthead p {
 		font-size: 13px;
 		line-height: 15px;
-		margin:0!important;
-		padding:0!important;
+		margin:0;
+		padding:0;
 	}
 
 	.resume-section h2 {
@@ -167,10 +176,10 @@ html, #layout-resume {
 	}
 
 	.no-print {
-		display:none !important;
+		display:none;
 	}
 	.no-web {
-		display:block !important;
+		display:block;
 	}
 
 	i { display:none !important; }
@@ -184,16 +193,15 @@ html, #layout-resume {
 	}
 
 	.resume-info .indent {
-		margin-top:0 !important;
-		margin-bottom:0 !important;
+		margin-top:0;
+		margin-bottom:0;
 	}
 
 	.skill-list li {
 		a {
-			.box-shadow(none) !important;
-			background: inherit!important;
-			color: inherit!important;
-			padding:0;
+			background: inherit !important;
+			color: inherit !important;
+			padding: 0 !important;
 		}
 
 		margin:0;

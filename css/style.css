@@ -7509,31 +7509,39 @@ html,
   width: 33.332%;
   float: left;
 }
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .masthead .phone-number {
     display: block;
     float: none;
-    margin: 0;
+    font-size: 15px;
+    margin: 0 0 5px;
+    clear: left;
   }
   .domains-list li {
     width: 50%;
+  }
+  .masthead h1 {
+    font-size: 21px;
+    line-height: 24px;
+    margin: 0;
+    padding: 0;
   }
 }
 @media print {
   html,
   #layout-resume {
-    background: #ffffff !important;
+    background: #ffffff;
     line-height: 13px;
     font-size: 11px;
   }
   .masthead h1 {
     font-size: 21px;
     line-height: 24px;
-    margin: 0!important;
-    padding: 0!important;
+    margin: 0;
+    padding: 0;
   }
   .page-header {
-    margin: 0!important;
+    margin: 0;
   }
   .masthead h1 small {
     font-size: 15px;
@@ -7542,8 +7550,8 @@ html,
   .masthead p {
     font-size: 13px;
     line-height: 15px;
-    margin: 0!important;
-    padding: 0!important;
+    margin: 0;
+    padding: 0;
   }
   .resume-section h2 {
     font-size: 15px;
@@ -7560,10 +7568,10 @@ html,
     color: #000000;
   }
   .no-print {
-    display: none !important;
+    display: none;
   }
   .no-web {
-    display: block !important;
+    display: block;
   }
   i {
     display: none !important;
@@ -7575,23 +7583,17 @@ html,
     color: #000000;
   }
   .resume-info .indent {
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
+    margin-top: 0;
+    margin-bottom: 0;
   }
   .skill-list li {
     margin: 0;
     line-height: 18px;
   }
   .skill-list li a {
-    -webkit-box-shadow: none !important;
-    -moz-box-shadow: none !important;
-    box-shadow: none !important;
-    -webkit-box-shadow: none !important;
-    -moz-box-shadow: none !important;
-    box-shadow: none !important;
-    background: inherit!important;
-    color: inherit!important;
-    padding: 0;
+    background: inherit !important;
+    color: inherit !important;
+    padding: 0 !important;
   }
   .skill-list li:not(:last-child) a:after {
     content: "\002C";
