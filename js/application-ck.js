@@ -1,1 +1,1 @@
-;
+jQuery(function(){$(".scroll-top").bind("click",function(a){a.preventDefault();$(document.body).animate({scrollTop:0},500,function(){})})});
