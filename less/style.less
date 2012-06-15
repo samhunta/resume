@@ -1,0 +1,200 @@
+@import "bootstrap/bootstrap.less";
+@import "bootstrap/responsive.less";
+@import "lib/variables.less";
+@import "lib/mixins.less";
+
+// Font-family: Chunkfive
+@import "../font/chunkfive/font.css";
+
+html, #layout-resume {
+	height: 100%;
+	height: auto !important;
+	min-height: 100%;
+}
+
+#layout-resume {
+	#gradient > .vertical(#fff, #ececec);
+	background-attachment: fixed !important;
+}
+
+.masthead h1 {
+	padding:2px 0 5px;
+	font-size:46px;
+	line-height:54px;
+}
+
+.masthead p {
+	font-size:16px;
+}
+.masthead i {
+	vertical-align:-15%;
+}
+
+.resume-info-2 {
+	margin: 9px 0 0 20px;
+}
+
+.resume-info, .resume-info-pp {
+	margin:20px;
+
+	.indent { margin:10px; }
+}
+
+.masthead .phone-number {
+	margin-top:8px;
+	float:right;
+}
+
+.no-web {
+	display:none;
+}
+
+.page-header {
+	border-color: @hrBorder;
+}
+
+.resume-section h2 {
+	color: @gray;
+}
+
+.skill-list {
+	margin-left:10px;
+	margin-bottom:0;
+	list-style:none;
+
+	li {
+		margin:0 0 5px;
+		display:inline;
+		line-height:30px;
+	}
+
+	li a, li a:hover {
+		cursor:pointer;
+		line-height:14px;
+		display:inline-block;
+		text-decoration:none;
+		.border-radius(2px);
+		padding:5px;
+	}
+
+	li a[href]:hover {
+		background: #0371b7;
+		color: #fff;
+	}
+
+
+	.framework a {
+		.colors(@frameworkBackground, @frameworkText);
+	}
+	.language a {
+		.colors(@languageBackground, @languageText);
+	}
+	.library a {
+		.colors(@libraryBackground, @libraryText);
+	}
+	.practices a {
+		.colors(@practicesBackground, @practicesText);
+	}
+	.application a {
+		.colors(@applicationBackground, @applicationText);
+	}
+	.note {
+		display:block;
+		small { font-size:12px; color:#333; }
+	}
+}
+
+.domains-list {
+	margin:5px 18px;
+
+	li { width:33.332%; float:left; }
+}
+
+@media (max-width: 767px) {
+	.masthead .phone-number {
+		display:block;
+		float:none;
+		margin:0;
+	}	
+}
+
+@media print {
+	html, #layout-resume {
+		background: @white !important;
+		line-height: 13px;
+		font-size: 11px;
+	}
+
+	.masthead h1 {
+		font-size: 21px;
+		line-height: 24px;
+		margin:0!important;
+		padding:0!important;
+	}
+
+	.page-header {
+		margin:0!important;
+	}
+
+	.masthead h1 small {
+		font-size: 15px;
+		line-height: 24px;
+	}
+
+	.masthead p {
+		font-size: 13px;
+		line-height: 15px;
+		margin:0!important;
+		padding:0!important;
+	}
+
+	.resume-section h2 {
+		font-size: 15px;
+	}
+
+	.resume-section h4 {
+		font-size: 12px;
+	}
+
+	.resume-section h2, .resume-section h4, .resume-info p, .resume-info {
+		margin-top:0;
+		margin-bottom:0;
+		color: @black;
+	}
+
+	.no-print {
+		display:none !important;
+	}
+	.no-web {
+		display:block !important;
+	}
+
+	i { display:none !important; }
+
+	.skill-list .note {
+		display:inline;
+	}
+
+	.skill-list .note small {
+		color: @black;
+	}
+
+	.resume-info .indent {
+		margin-top:0 !important;
+		margin-bottom:0 !important;
+	}
+
+	.skill-list li {
+		a {
+			.box-shadow(none) !important;
+			background: inherit!important;
+			color: inherit!important;
+			padding:0;
+		}
+
+		margin:0;
+		line-height: @baseLineHeight;
+		
+		&:not(:last-child) a:after { content:"\002C"; }
+	}
+}
