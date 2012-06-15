@@ -7526,6 +7526,12 @@ html,
     padding: 0;
   }
 }
+@media (max-width: 480px) {
+  .domains-list li {
+    width: auto;
+    float: none;
+  }
+}
 @media print {
   html,
   #layout-resume {
