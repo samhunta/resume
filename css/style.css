@@ -7435,8 +7435,7 @@ html,
   margin: 10px;
 }
 .masthead .phone-number {
-  margin-top: 8px;
-  float: right;
+  color: #555555;
 }
 .no-web {
   display: none;
@@ -7559,6 +7558,9 @@ html,
   .resume-section h4 {
     font-size: 12px;
   }
+  .resume-info-2 {
+    margin: 0;
+  }
   .resume-section h2,
   .resume-section h4,
   .resume-info p,
@@ -7587,8 +7589,8 @@ html,
     margin-bottom: 0;
   }
   .skill-list li {
-    margin: 0;
-    line-height: 18px;
+    margin: 0 !important;
+    line-height: 12px !important;
   }
   .skill-list li a {
     background: inherit !important;

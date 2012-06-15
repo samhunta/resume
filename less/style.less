@@ -41,8 +41,7 @@ html, #layout-resume {
 }
 
 .masthead .phone-number {
-	margin-top:8px;
-	float:right;
+	color: @gray;
 }
 
 .no-web {
@@ -169,6 +168,10 @@ html, #layout-resume {
 		font-size: 12px;
 	}
 
+	.resume-info-2 {
+		margin:0;
+	}
+
 	.resume-section h2, .resume-section h4, .resume-info p, .resume-info {
 		margin-top:0;
 		margin-bottom:0;
@@ -203,9 +206,9 @@ html, #layout-resume {
 			color: inherit !important;
 			padding: 0 !important;
 		}
-
-		margin:0;
-		line-height: @baseLineHeight;
+		
+		margin:0 !important;
+		line-height: 12px !important;
 		
 		&:not(:last-child) a:after { content:"\002C"; }
 	}
